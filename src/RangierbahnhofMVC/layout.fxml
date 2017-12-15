@@ -1,95 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="1012.0" prefWidth="1182.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9">
-   <children>
-      <ButtonBar layoutX="40.0" layoutY="512.0" prefHeight="0.0" prefWidth="200.0" />
-      <VBox layoutX="358.0" layoutY="5.0" prefHeight="1000.0" prefWidth="518.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="306.0" AnchorPane.topAnchor="5.0">
+<ScrollPane prefHeight="1012.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RangierbahnhofMVC.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1017.0" prefWidth="1163.0">
          <children>
-            <TextField fx:id="textfeld0" prefHeight="100.0" prefWidth="518.0">
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
+            <TextField layoutX="161.0" layoutY="792.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 9" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
             </TextField>
-            <TextField fx:id="textfeld1" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld2" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld3" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld4" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld5" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld6" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld7" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld8" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld9" prefHeight="100.0" prefWidth="518.0" />
-            <TextField fx:id="textfeld10" prefHeight="100.0" prefWidth="518.0" />
+            <TextField layoutX="174.0" layoutY="704.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 8" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="172.0" layoutY="607.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 7" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="185.0" layoutY="516.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 6" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="174.0" layoutY="429.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 5" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="156.0" layoutY="340.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 4" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="171.0" layoutY="244.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 3" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="164.0" layoutY="157.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 2" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="152.0" layoutY="72.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="164.0" layoutY="889.0" prefHeight="50.0" prefWidth="112.0" text="Gleis 10" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <Button layoutX="950.0" layoutY="875.0" mnemonicParsing="false" onAction="#start" prefHeight="75.0" prefWidth="114.0" text="Start">
+               <font>
+                  <Font size="31.0" />
+               </font></Button>
+            <GridPane layoutX="442.0" layoutY="45.0" prefHeight="911.0" prefWidth="437.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextArea fx:id="textfeld0" prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea fx:id="textfeld1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <TextArea fx:id="textfeld2" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <TextArea fx:id="textfeld3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <TextArea fx:id="textfeld4" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                  <TextArea fx:id="textfeld5" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
+                  <TextArea fx:id="textfeld6" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+                  <TextArea fx:id="textfeld7" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
+                  <TextArea fx:id="textfeld8" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
+                  <TextArea fx:id="textfeld9" layoutX="10.0" layoutY="739.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
+                  <TextArea fx:id="warteschlange1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                  <TextArea fx:id="warteschlange6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextArea fx:id="warteschlange5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextArea fx:id="warteschlange4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextArea fx:id="warteschlange3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextArea fx:id="warteschlange2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextArea fx:id="warteschlange10" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextArea fx:id="warteschlange9" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextArea fx:id="warteschlange8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextArea fx:id="warteschlange7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
          </children>
-      </VBox>
-    <Button layoutX="923.0" layoutY="924.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="229.0" text="Simulation beginnen" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="923.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="924.0">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <TextField layoutX="136.0" layoutY="50.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="147.0" layoutY="857.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="135.0" layoutY="765.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="141.0" layoutY="670.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="130.0" layoutY="587.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="133.0" layoutY="498.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="127.0" layoutY="410.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="127.0" layoutY="307.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="115.0" layoutY="207.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="130.0" layoutY="120.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="145.0" layoutY="930.0" prefHeight="50.0" prefWidth="100.0" text="Gleis 1" AnchorPane.leftAnchor="145.0">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </TextField>
-   </children>
-</AnchorPane>
+      </AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,6 +1,6 @@
 package RangierbahnhofMVC;
-import java.awt.TextArea;
 
+import javafx.scene.control.*;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 
@@ -21,14 +21,24 @@ public class TextFeldAktualisierung extends Task<Boolean> {
 		updateTextFeld();
 		return null;
 	}
+	public Boolean warteschlangenCall() throws Exception{
+		updateWarteschlange();
+		return null;
+	}
 
 	private void updateTextFeld() {
 		if(bhf.getZuege()[textFeldNummer] != null) {
-			Platform.runLater(()-> textFeld.setText("Zug " + bhf.getZuege()[textFeldNummer].getID()));
+			Platform.runLater(()-> textFeld.setText("Zug " + bhf.getZuege()[textFeldNummer].getID() + " eingefahren"));
 		} else {
 			Platform.runLater(()-> textFeld.setText("Gleis leer"));
 		}
+
+	}
 	
+	private void updateWarteschlange() {
+		Platform.runLater(()->textFeld.setText(bhf.getWarteschlange().get(textFeldNummer).toString()));	
+		}
+		
 	}
 
-}
+
