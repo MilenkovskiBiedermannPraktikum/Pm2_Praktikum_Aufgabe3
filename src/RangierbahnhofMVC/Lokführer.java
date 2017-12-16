@@ -13,7 +13,8 @@ public class Lokführer extends Thread {
 			aufgabe = "ausfahren";
 		}
 	}
-
+	
+	@Override
 	public void run() {
 		int gleisNummer = bhf.getGleisNummer();
 		if(aufgabe.equals("einfahren")){

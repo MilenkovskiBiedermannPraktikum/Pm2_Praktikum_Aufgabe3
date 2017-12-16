@@ -19,26 +19,26 @@ public class TextFeldAktualisierung extends Task<Boolean> {
 	@Override
 	public Boolean call() throws Exception {
 		updateTextFeld();
-		return null;
+		return true;
 	}
-	public Boolean warteschlangenCall() throws Exception{
+
+	public Boolean warteschlangenCall() throws Exception {
 		updateWarteschlange();
-		return null;
+		return true;
 	}
 
 	private void updateTextFeld() {
-		if(bhf.getZuege()[textFeldNummer] != null) {
-			Platform.runLater(()-> textFeld.setText("Zug " + bhf.getZuege()[textFeldNummer].getID() + " eingefahren"));
+		if (bhf.getZuege()[textFeldNummer] == null) {
+			Platform.runLater(() -> textFeld.setText("Gleis leer"));
 		} else {
-			Platform.runLater(()-> textFeld.setText("Gleis leer"));
+			System.err.println( bhf.getZuege()[textFeldNummer].getID());
+			int id = bhf.getZuege()[textFeldNummer].getID();
+			Platform.runLater(() -> textFeld.setText("Zug " + id + " eingefahren"));
 		}
-
 	}
-	
+
 	private void updateWarteschlange() {
-		Platform.runLater(()->textFeld.setText(bhf.getWarteschlange().get(textFeldNummer).toString()));	
-		}
-		
+		Platform.runLater(() -> textFeld.setText(bhf.getWarteschlange().get(textFeldNummer).toString()));
 	}
 
-
+}
