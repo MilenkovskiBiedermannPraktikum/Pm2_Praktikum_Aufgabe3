@@ -9,17 +9,35 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Die Klasse BahnhofsVisualisierung präsentiert die Daten des Modells, wird bei
+ * Änderungen aufgerufen.
+ * 
+ * @author katerina milenkovski und daniel biedermann
+ *
+ */
 public class BahnhofVisualisierung extends Application implements Observer {
-
+	/**
+	 * Referenz auf Controller der Darstellung
+	 */
 	private Controller c;
 
+	/**
+	 * Konstruktor
+	 * 
+	 * @param controller
+	 */
 	public BahnhofVisualisierung(Controller controller) {
 		this.c = controller;
 	}
-
-	public BahnhofVisualisierung() {
+	
+	public BahnhofVisualisierung(){
 	}
 
+	/**
+	 * Start()-Methode der BahnhofsVisualisierung. Stellt Einstiegspunkt der
+	 * Anwendung und startet diese.
+	 */
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		Parent wurzel = FXMLLoader.load(getClass().getResource("layout.fxml"));
@@ -28,6 +46,10 @@ public class BahnhofVisualisierung extends Application implements Observer {
 		primaryStage.show();
 	}
 
+	/**
+	 * Update()-Methode der BahnhofsVisualisierung. Hier werden Änderungen des
+	 * Bahnhofs aktualisiert und die Verbindung zum Modell hergestellt.
+	 */
 	@Override
 	public void update(Observable o, Object arg) {
 		if (o instanceof RangierBahnhof) {
