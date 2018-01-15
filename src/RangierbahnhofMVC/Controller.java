@@ -92,8 +92,6 @@ public class Controller {
 			Thread bhfSThread = new Thread(bhfS);
 			isStarted = true;
 			bhfSThread.start();
-
 		}
 	}
-
 }

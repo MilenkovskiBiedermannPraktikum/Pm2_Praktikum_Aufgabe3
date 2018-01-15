@@ -1,5 +1,7 @@
 package RangierbahnhofMVC;
 
+import javafx.application.Application;
+
 /**
  * Simulation eines Rangierbahnhofs.
  * 
@@ -47,4 +49,5 @@ public class BahnhofSimuliert implements Runnable {
 
 		}
 	}
-}
+	}
+
