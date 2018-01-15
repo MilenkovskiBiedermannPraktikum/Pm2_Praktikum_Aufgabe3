@@ -38,7 +38,6 @@ public class TextFeldAktualisierung extends Task<Boolean> {
 		this.bhf = bhf;
 		this.textFeldNummer = textFeldNummer;
 	}
-
 	/**
 	 * call()-Methode; updatet jeweiliges Textfeld.
 	 */
@@ -47,7 +46,6 @@ public class TextFeldAktualisierung extends Task<Boolean> {
 		updateTextFeld();
 		return true;
 	}
-
 	/**
 	 * call()-Methode der Warteschlange, updatet die Warteschlange eines
 	 * Bahnhofs.
@@ -59,7 +57,6 @@ public class TextFeldAktualisierung extends Task<Boolean> {
 		updateWarteschlange();
 		return true;
 	}
-
 	/**
 	 * Update()-Methode eines TextFeldes. Je nachdem ob ein Gleis leer ist oder
 	 * sich ein Zug darauf befindet, wird das jeweilige TextFeld aktualisiert.

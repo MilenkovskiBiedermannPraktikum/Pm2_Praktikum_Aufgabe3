@@ -56,7 +56,6 @@ public class Controller {
 	public static void main(String[] args) {
 		Application.launch(BahnhofVisualisierung.class, args);
 	}
-
 	/**
 	 * Getter
 	 * 
@@ -68,7 +67,6 @@ public class Controller {
 				textfeld8, textfeld9 };
 		return t[index];
 	}
-
 	/**
 	 * Getter
 	 * 
@@ -80,7 +78,6 @@ public class Controller {
 				warteschlange7, warteschlange8, warteschlange9, warteschlange10 };
 		return w[index];
 	}
-
 	/**
 	 * Start()-Methode beginnt die BahnhofSimulation.
 	 */

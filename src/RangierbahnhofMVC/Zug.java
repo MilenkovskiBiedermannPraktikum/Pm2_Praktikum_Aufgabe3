@@ -8,7 +8,6 @@ package RangierbahnhofMVC;
  */
 public class Zug {
 	private int id;
-
 	/**
 	 * Konstruktor
 	 * 
@@ -17,7 +16,6 @@ public class Zug {
 	public Zug(int id) {
 		this.id = id;
 	}
-
 	/**
 	 * Getter der ID
 	 * 
