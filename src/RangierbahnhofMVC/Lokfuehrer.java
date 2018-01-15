@@ -8,7 +8,7 @@ package RangierbahnhofMVC;
  * @author katerina milenkovski und daniel biedermann
  *
  */
-public class Lokführer extends Thread {
+public class Lokfuehrer extends Thread {
 	/**
 	 * Referenz auf den Bahnhof, an dem der Lokführer arbeitet.
 	 */
@@ -27,7 +27,7 @@ public class Lokführer extends Thread {
 	 * 
 	 * @param bhf
 	 */
-	public Lokführer(RangierBahnhof bhf) {
+	public Lokfuehrer(RangierBahnhof bhf) {
 		this.bhf = bhf;
 		if ((Math.random() * 10) > 5) {
 			aufgabe = "einfahren";

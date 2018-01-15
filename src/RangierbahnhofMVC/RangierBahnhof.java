@@ -73,7 +73,7 @@ public class RangierBahnhof extends Observable {
 			// dann zug auf gleisnummer einfahren lassen
 			zuege[gleisNummer] = zug;
 			warteschlange.replace(gleisNummer, warteschlange.get(gleisNummer) - 1);
-			System.err.println("Zug " + zug.getID() + " eingefügt auf Gleis " + gleisNummer);
+			System.err.println("Zug " + zug.getID() + " eingefuegt auf Gleis " + gleisNummer);
 			setChanged();
 			notifyObservers();
 			notifyAll();

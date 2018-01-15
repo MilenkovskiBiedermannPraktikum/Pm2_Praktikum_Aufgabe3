@@ -39,8 +39,8 @@ public class BahnhofSimuliert implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			Lokführer lokführer = new Lokführer(bhf);
-			lokführer.start();
+			Lokfuehrer lokfuehrer = new Lokfuehrer(bhf);
+			lokfuehrer.start();
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
